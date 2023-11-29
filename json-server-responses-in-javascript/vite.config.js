@@ -14,6 +14,12 @@ export default defineConfig({
     }
   },
   server: {
-    cors: true
-  }
+    proxy: {
+      '/api': {
+        target: 'http://opendata.wifi.at',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })
