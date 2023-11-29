@@ -1,19 +1,5 @@
-<script setup>
-import { ref } from 'vue';
-
-const sampleData = ref('')
-logMovies()
-
-async function logMovies() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-  response.json().then((data) => {
-    sampleData.value = data
-  })
-}
-
-</script>
-
 <template>
-    <p>{{ sampleData }}</p>
-  </template>
+    <h1>Homepage - JSON Server Responses In Javascript</h1>
+    <p>Use the above navigation links to access each individual realised User Story</p>
+</template>
   
