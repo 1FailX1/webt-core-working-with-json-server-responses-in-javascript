@@ -72,7 +72,7 @@ function getRandomJob() {
         <br>
         <button>Get random Career</button>
     </form>
-    <p v-if="yourNewJob">Job Title: {{ yourNewJob.title }} <br> Place of Work: {{ yourNewJob.placeOfWork }} <br> Job Description: {{ yourNewJob.description }}</p>
+    <p v-if="yourNewJob"><b>Job Title:</b> {{ yourNewJob.title }} <br> <b>Place of Work:</b> {{ yourNewJob.placeOfWork }} <br> <b>Job Description:</b> {{ yourNewJob.description }}</p>
     <p v-else>Click the button to receive your new job!</p>
 </template>
   
